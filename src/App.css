@@ -1,0 +1,59 @@
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.square {
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.popup-box {
+  position: absolute;
+  background-color: rgb(20 184 166);
+  padding: 78px 94px;
+  left: 50%;
+transform: translate(-50%, -10%);
+}
+.play-changes, .play-changes .text-white {
+  color: #000 !important;
+}
+
+.popup-box.box-new {
+  display: block !important;
+}
+
+.popup-box + .closed-box {
+  display: none;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 4px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  top: -15px;
+  right: -23px;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
